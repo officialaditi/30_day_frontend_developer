@@ -1,0 +1,313 @@
+CSS => cascading style sheet;
+
+🛑 Selectors:-
+
+--> A CSS selector selects the HTML element(s) you want to style.
+
+--> CSS selectors are used to "find" (or select) the HTML elements you want to style.
+
+--> We can divide CSS selectors into five categories:
+
+-> Simple selectors (select elements based on name, id, class)
+-> Combinator selectors (select elements based on a specific relationship between them)
+-> Pseudo-class selectors (select elements based on a certain state)
+-> Pseudo-elements selectors (select and style a part of an element)
+-> Attribute selectors (select elements based on an attribute or attribute value)
+
+💠simple selector:-
+--> name:- element(name);
+   example:- p, div, span, article etc
+
+--> id:- giving id to particular element; id should select using (#)followed by id-name; id should be unique.
+    example:- #para1   
+    Note: An id name cannot start with a number!
+
+--> class:- class selector selects HTML elements with a specific class attribute.;write a period (.) character, followed by the class name.
+   example:- .class
+
+🔰 Universal Selectors
+The universal selector (*) selects all HTML elements on the page.
+
+🔰 The CSS Grouping Selector
+when we have same style to different element we should not give the style single as it make repeated code so we will use Grouping select
+   example:- h1, h2, p {
+    font-size : 10px
+   } 
+
+************************************************************************
+
+🛑 Adding css to HTML file:-
+--> external css file:-
+    --> <link rel="stylesheet" href="mystyle.css">
+    --> The external .css file should not contain any HTML tags.\
+
+************************************************************************
+
+🛑 Box Model
+
+
+The CSS box model describes how every element on a webpage is a rectangular box, and it determines how elements' sizes and spacing are calculated.
+
+Each box has four areas, from inside to outside:
+
+Content: The actual content of the box (e.g., text, images).
+Padding: Space between the content and the border. It pushes the border outward.
+Border: The edge around the padding, which can be styled (e.g., solid, dashed).
+Margin: Space outside the border, used to create distance between elements.
+Total Width/Height of an Element =
+Content + Padding + Border + Margin
+
+/////////////////////////////////////////////////////////////////////////
+
+🛑 Display
+
+The display property in CSS determines how an element is displayed on the page and how it interacts with other elements. Here’s a simple breakdown:
+
+Key Display Values
+block:
+
+Elements take up the full width of their container (even if the content is smaller).
+Starts on a new line.
+Example: <div>, <p>, <h1> are block elements.
+Use Case: Structuring large sections of content.
+
+--> inline:
+
+Elements only take up as much width as their content.
+Stays on the same line as other elements.
+Example: <span>, <a> are inline elements.
+Use Case: Styling text or small portions of content.
+
+--> inline-block:
+
+Combines features of inline and block.
+Stays on the same line as other elements but allows setting width and height.
+Example: Buttons or styled links.
+Use Case: Creating button-like elements.
+
+--> flex:
+
+Makes the element a flex container, enabling flexible layouts for child elements.
+Used for aligning and distributing items efficiently.
+Example: Navbars or responsive layouts.
+Use Case: Responsive and dynamic designs.
+
+--> grid:
+
+Makes the element a grid container for precise row-and-column layouts.
+Example: Dashboard designs or gallery layouts.
+Use Case: Complex layouts like card grids.
+
+--> none:
+
+Hides the element completely (it won’t take up space in the layout).
+Example: Hide elements temporarily.
+Use Case: Toggle visibility.
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+🛑 Position:-
+
+The position property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky).
+
+The position Property:-
+The position property specifies the type of positioning method used for an element.
+
+There are five different position values:
+
+--> static
+--> relative
+--> fixed
+--> absolute
+--> sticky
+
+Elements are then positioned using the top, bottom, left, and right properties. However, these properties will not work unless the position property is set first. They also work differently depending on the position value.
+
+🔰 position: static;
+
+==> HTML elements are positioned static by default.
+
+==> Static positioned elements are not affected by the top, bottom, left, and right properties.
+
+==> An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page: (means take normally full width)
+
+🔰 position: relative;
+
+==> An element with position: relative; is positioned relative to its normal position.
+
+==> Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position.
+
+==> Other content will not be adjusted to fit into any gap left by the element.
+example:- div.relative {
+  position: relative;
+  left: 30px;
+  border: 3px solid #73AD21;
+}
+==> it will give space of 30px from left
+
+🔰 position: fixed;
+
+==> An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled.
+
+==> The top, right, bottom, and left properties are used to position the element.
+
+==> A fixed element does not leave a gap in the page where it would normally have been located.
+example:- div.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid #73AD21;
+}
+==> here the div will go at the right botton with no space and will fixed there only.
+
+🔰 position: absolute;  
+
+==> An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+
+==> However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+
+Note: Absolute positioned elements are removed from the normal flow, and can overlap elements.
+
+div.relative {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid #73AD21;
+}
+
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}
+==> always used relative with absolute;
+
+🔰 position: sticky;
+
+==> An element with position: sticky; is positioned based on the user's scroll position.
+
+==> A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+
+==> Note: You must specify at least one of top, right, bottom or left for sticky positioning to work.
+
+div.sticky {
+  position: sticky;
+  top: 0;
+  background-color: green;
+  border: 2px solid #4CAF50;
+}
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+🛑 CSS Transition:-
+
+CSS transitions allows you to change property values smoothly, over a given duration.
+
+-> transition
+-> transition-delay
+-> transition-duration
+-> transition-property
+-> transition-timing-function
+
+How to Use CSS Transitions?
+To create a transition effect, you must specify two things:
+
+the CSS property you want to add an effect to
+the duration of the effect
+Note: If the duration part is not specified, the transition will have no effect, because the default value is 0.
+
+A CSS transition is declared using the transition shorthand property or its longhand properties.
+syntax:-
+selector {
+  transition: property duration timing-function delay;
+}
+--> property:- 
+Specifies the CSS property you want to animate (e.g., background-color, transform, opacity, etc.).
+Example: background-color.
+
+--> duration:-
+Specifies how long the transition takes (e.g., 0.3s, 500ms).
+Example: 0.5s.
+
+--> timing-function:-
+Defines how the animation progresses during the transition. These are easing functions that determine the speed curve.
+
+Common Types of Timing Functions:
+
+ease (default): Starts slow, speeds up, and then slows down.
+linear: Moves at a constant speed.
+ease-in: Starts slow, then speeds up.
+ease-out: Starts fast, then slows down.
+ease-in-out: Starts slow, speeds up, then slows down.
+
+--> delay:-
+Specifies how long to wait before starting the transition.
+Example: 0.2s.
+
+==> use with Transforms:-
+
+The transform property in CSS allows you to modify the appearance of an element by applying various transformation functions, such as rotating, scaling, skewing, or translating (moving) it in 2D or 3D space.
+
+selector {
+  transform: transformation-function value(s);
+}
+You can use multiple transformation functions together by separating them with spaces.
+
+different used of transform:-
+
+1) translate(x, y)
+Moves the element along the X and Y axes.
+
+= translateX(value) moves the element horizontally.
+= translateY(value) moves the element vertically.
+= translate(valueX, valueY) moves it in both directions.
+example:-
+transform: translate(50px, 20px); /* Moves 50px right and 20px down */
+transform: translateX(100px); /* Moves 100px to the right */
+transform: translateY(-50px); /* Moves 50px up */
+
+2) scale(x, y)
+Resizes the element (scales it).
+
+scaleX(value) scales only the width.
+scaleY(value) scales only the height.
+Default scale factor is 1. Values greater than 1 enlarge, while values between 0 and 1 shrink.
+example:-
+transform: scale(1.5, 1.5); /* Increases width and height by 50% */
+transform: scaleX(2); /* Doubles the width */
+transform: scaleY(0.5); /* Shrinks the height by half */
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+In design and development, primary and secondary colors are part of a color scheme used to create a cohesive and visually appealing interface.
+
+🔰 Primary Color
+The primary color is the dominant color in your design.
+
+It's the main color used for branding or to emphasize key elements like logos, headers, or call-to-action buttons.
+
+This color represents the brand or theme and usually appears the most in the design.
+
+Examples of usage:
+
+Logo text or icons
+Navigation bar
+Headlines or key visuals
+
+🔰 Secondary Color
+The secondary color complements the primary color and is used for supporting elements.
+
+It’s often used to add contrast or highlight less prominent features.
+
+While the primary color catches attention, the secondary color ensures a balanced, harmonious look.
+
+Examples of usage:
+
+Button hover effects
+Background highlights
+Links, subtitles, or borders

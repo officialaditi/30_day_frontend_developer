@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form</title>
+	</head>
+	<body>
+		<h1>Understand Form:-</h1>
+		<form>
+			<div>
+				<label for="fname">Enter Name</label>
+				<input type="text" id="fname" />
+			</div>
+			<div>
+				<label for="fruits">Choose Fruits</label>
+				<select id="fruits">
+					<option>Apple</option>
+					<option>Mango</option>
+					<option>Strawberry</option>
+				</select>
+			</div>
+			<div>
+				<label for="message">Using TextArea:-</label>
+				<textarea rows="10" cols="20">
+                    Enter your message
+                </textarea>
+			</div>
+			<div>
+				<button type="button" onclick="alert('hello')">
+					Enter here
+				</button>
+			</div>
+			<div>
+				<h3>Using fieldset</h3>
+				<fieldset>
+					<legend>Fill the forms</legend>
+					<label for="fname">Enter First Name</label>
+					<input id="fname" type="text" /><br />
+					<label for="lname">Enter Last Name</label>
+					<input id="lname" type="text" />
+				</fieldset>
+			</div>
+		</form>
+        <form>
+            <h2>Different Type of Input </h2>
+            <input type="text"><br>
+            <input type="number"><br>
+            <input type="color"><br>
+            <input type="checkbox"><br>
+            <input type="date"><br>
+            <input type="datetime-local"><br>
+            <input type="image"><br>
+            <input type="email" ><br>
+            <input type="file"><br>
+            <input type="password" ><br>
+            <input type="radio"><br>
+            <input type="search"><br>
+            <input type="tel"><br>
+        </form>
+	</body>
+</html>

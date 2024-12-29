@@ -1,0 +1,19 @@
+
+🛑 do_while_loop
+
+The do...while loop is similar to a while loop, but with one key difference: 
+=> it executes the code block at least once, even if the condition is false
+
+=> This is because the condition is checked after the code block runs.
+
+example:-
+
+do {
+    // Code to execute
+} while (condition);
+
+let i = 1;
+do {
+    console.log(i); // Print the current value of i
+    i++; // Increment i
+} while (i <= 5); // Check the condition after executing the code block

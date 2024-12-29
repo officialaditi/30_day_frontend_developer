@@ -1,0 +1,27 @@
+🛑 map() method
+what is map()?
+
+==> map method is used to create an new array, from existing one by applying function to each one element of the original array
+
+(means it go to the original array and loop to all the element it present inside it);
+
+==> map() does not execute the function for empty element.
+
+==> it does not change the original array.
+
+
+syntax:-
+
+array.map(function(currentValue, index, arr)){};
+
+=> function():- required!
+                a function to run for each array element.
+
+=> currentValue:- required!
+                  the value of the current element
+
+=> index:- (optional);
+           the index of the current element
+
+=> arr:- (optional)
+          the array of the current element.

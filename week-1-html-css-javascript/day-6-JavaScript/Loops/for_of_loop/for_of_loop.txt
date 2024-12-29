@@ -1,0 +1,43 @@
+
+
+🛑 for_of_loop
+
+The for...of loop is a modern and concise way to iterate over the elements of an array (or other iterable objects like strings, maps, sets, etc.).
+
+ It allows you to access the elements directly without using an index.
+
+ syntax:-
+
+ for (let element of iterable) {
+    // Code to execute for each element
+}
+
+
+=> iterable: The array (or other iterable object) you want to iterate over.
+=> element: The variable that holds the value of the current element in each iteration.
+
+
+example:-
+
+let arr = [10, 20, 30, 40, 50];
+for (let element of arr) {
+    console.log(element);
+}
+
+10
+20
+30
+40
+50
+
+// using for character of string;
+
+let str = "Hello";
+for (let char of str) {
+    console.log(char);
+}
+H
+e
+l
+l
+o

@@ -1,0 +1,44 @@
+🛑 Callback Function:-
+
+=> A callback function is simply a function that is passed as an argument to another function.
+
+▶️Why Do We Use Callback Functions?
+In JavaScript, things often happen asynchronously (not instantly). For example:
+
+==> Fetching data from a server
+==> Reading files
+==> Setting a timer
+
+Since these tasks take time, JavaScript allows us to pass a callback function to handle what happens after the task is complete.
+
+example:-
+
+function greet (name, callback) {
+    console.log(`Hello, ${name}`)// run immediately
+    callback();
+}
+
+//callback function
+function sayGoodBye() {
+    console.log('Good bye!');
+}
+greet('Aditi', sayGoodBye)
+
+//greet is a function that accepts two arguments:
+name (a string).
+callback (a function to execute later).
+Inside greet, it calls callback() after printing the greeting.
+We pass sayGoodbye as the callback, so it runs after greet finishes.
+
+==> You pass the function name without parentheses (e.g., sayGoodbye, not sayGoodbye())
+
+🛑 Higher order function
+
+=> HOF are function that either takes other function as arguments or return a function.
+
+why to use??
+
+=> HOF allow for abstraction and flexibility.
+=> they enable you to write code that can be re-used in differeent situation and create more generic or customizable function.
+
+==> map,filter,reduce are higher-order-function because they take callback functions as arguments.

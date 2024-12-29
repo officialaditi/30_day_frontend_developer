@@ -1,0 +1,166 @@
+Block vs Inline element
+
+Every HTML element has a default display value, depending on what type of element it is.
+
+The two most common display values are block and inline.
+
+1) Block-level Elements
+--> A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element.
+
+--> A block-level element always takes up the full width available (stretches out to the left and right as far as it can).
+
+--> Two commonly used block elements are: <p> and <div>.
+
+--> example of block elements:-
+    - <h1>-<h6>    - <form>     - <table>
+    - <div>        - <footer>   - <header>
+    - <nav>        - <p>        - <nav> 
+
+The <div> element is a block-level and is often used as a container for other HTML elements.
+
+2) Inline Elements
+--> An inline element does not start on a new line.
+
+--> An inline element only takes up as much width as necessary.
+
+--> This is a [<span> element inside</span>] a paragraph.
+ 
+--> example of inline elements:-
+    - <a>       - <input>     - <select>
+    - <label>   - <img>       - <button>
+
+Note: An inline element cannot contain a block-level element!
+
+The <span> element is an inline container used to mark up a part of a text, or a part of a document
+
+******************************************************************
+
+HTML lists:-
+
+HTML lists allow web developers to group a set of related items in lists.
+
+their are 2 type of list:-
+---> orderlist:- 1,2,3
+---> unorderlist:- *,*,*
+
+1) Unordered HTML List
+--> An unordered list starts with the <ul> tag. Each list item starts with the <li> tag.
+
+--> The list items will be marked with bullets (small black circles) by default:
+
+---> more:- 
+The CSS list-style-type property is used to define the style of the list item marker. It can have one of the following values:
+
+Value	Description
+disc	Sets the list item marker to a bullet (default)
+circle	Sets the list item marker to a circle
+square	Sets the list item marker to a square
+none	The list items will not be marked
+
+
+2) Ordered HTML List
+--> An ordered list starts with the <ol> tag. Each list item starts with the <li> tag.
+
+--> The list items will be marked with numbers by default:
+
+--> more :-
+ The type attribute of the <ol> tag, defines the type of the list item marker:
+
+Type	Description
+type="1"	The list items will be numbered with numbers (default)
+type="A"	The list items will be numbered with uppercase letters
+type="a"	The list items will be numbered with lowercase letters
+type="I"	The list items will be numbered with uppercase roman numbers
+type="i"	The list items will be numbered with lowercase roman numbers
+******************************************************************
+HTML LINKS:-
+
+Links are found in nearly all web pages. Links allow users to click their way from page to page.
+
+--> The HTML <a> tag defines a hyperlink. It has the following syntax:
+--> Examples:-
+    <a href="url">link text</a>
+
+    HTML Links - The target Attribute
+By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.
+
+--> The target attribute specifies where to open the linked document.
+
+--> The target attribute can have one of the following values:
+
+=> _self - Default. Opens the document in the same window/tab as it was clicked
+=> _blank - Opens the document in a new window or tab
+=> _parent - Opens the document in the parent frame
+=> _top - Opens the document in the full body of the window
+
+                  Note:-
+
+To create a navigation link that takes you to a specific section on the same webpage, you can use the anchor (<a>) tag with an ID. Here's how:
+
+--> Add an id to the Target Section:
+     --> Each section you want to navigate to must have a unique id.
+
+--> Create Links Using the href Attribute:  
+     --> Use the id of the target section as the value of the href attribute, preceded by a #.   
+******************************************************************
+Semantic elements = elements with a meaning.
+
+What are Semantic Elements?
+--> A semantic element clearly describes its meaning to both the browser and the developer.
+
+--> Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
+
+--> Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.
+
+In HTML there are some semantic elements that can be used to define different parts of a web page:  
+
+<article>
+<aside>
+<details>
+<figcaption>
+<figure>
+<footer>
+<header>
+<main>
+<mark>
+<nav>
+<section>
+<summary>
+<time>
+
+##################################################################
+
+HTML Formatting Elements
+Formatting elements were designed to display special types of text:
+
+<b> - Bold text
+<strong> - Important text
+<i> - Italic text
+<em> - Emphasized text
+<mark> - Marked text
+<small> - Smaller text
+<del> - Deleted text
+<ins> - Inserted text
+<sub> - Subscript text
+<sup> - Superscript text  
+
+******************************************************************
+
+Adding CSS! What is Css??
+
+    Cascading Style Sheets (CSS) is used to format the layout of a webpage.
+
+Tip: The word cascading means that a style applied to a parent element will also apply to all children elements within the parent. So, if you set the color of the body text to "blue", all headings, paragraphs, and other text elements within the body will also get the same color (unless you specify something else)!
+
+Using Css:-
+CSS can be added to HTML documents in 3 ways:
+
+Inline - by using the style attribute inside HTML elements
+Internal - by using a <style> element in the <head> section
+External - by using a <link> element to link to an external CSS file
+
+The most common way to add CSS, is to keep the styles in external CSS files.
+
+external style sheet:- required .css extention, add link in html like this:- <link rel="stylesheet" href="styles.css">
+
+******************************************************************

@@ -1,0 +1,12 @@
+Day 2 Task: Build a Contact Form
+Create a form that includes the following:
+
+Name Field: A text input.✅
+Email Field: An email input.✅
+Phone Number: A number input.✅
+Gender: Radio buttons for "Male," "Female," and "Other."✅
+Hobbies: Checkboxes for options like "Coding," "Reading," etc.✅
+Country: A dropdown menu with options like "India," "USA," etc.✅
+Message: A textarea for users to type their message.✅
+
+Test the form functionality by submitting data (you can use https://httpbin.org/post as the action to see submitted data).

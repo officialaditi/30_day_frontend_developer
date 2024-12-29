@@ -1,0 +1,11 @@
+Task 1: Basic Webpage
+
+    Create a basic webpage with:
+    A header and footer.✅
+    A section introducing yourself (name, passion, skills).✅
+    An unordered list of your hobbies.✅
+    A link to your favorite website. ✅
+    A paragraph about yourself ✅
+    A photo of you or any illustration ✅
+    add your skill in order list ✅
+    add what you wanna learn

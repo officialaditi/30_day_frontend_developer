@@ -1,0 +1,152 @@
+🛑  operators:-
+
+🔰 Assignment Operators:-
+
+An equal sign in JavaScript is an assignment operator. It uses to assign a variable.
+example:- let firstName = 'Asabeneh'
+
+operator       example            same-as
+=             x = y               x = y
++=            x += y              x = x + y
+-=            x -= y              x = x - y
+*=            x *= y              x = x * y
+/=            x /= y              x = x / y 
+%=            x %= y              x = x % y
+**=           x **= y             x = x ** y  
+
+🔰 Arithmetic Operators:-
+
+===> Addition(+): a + b
+===> Subtraction(-): a - b
+===> Multiplication(*): a * b
+===> Division(/): a / b
+===> Modulus(%): a % b
+===> Exponential(**): a ** b
+
+example:-
+---> let numOne = 4
+---> let numTwo = 3
+---> let sum = numOne + numTwo
+---> let diff = numOne - numTwo
+---> let mult = numOne * numTwo
+---> let div = numOne / numTwo
+---> let remainder = numOne % numTwo
+---> let powerOf = numOne ** numTwo
+
+console.log(sum, diff, mult, div, remainder, powerOf)
+ // 7,1,12,1.33,1, 64
+
+ 🔰 Comparison Operator:-
+
+In programming we compare values, we use comparison operators to compare two values. 
+We check if a value is greater or less or equal to other value.
+
+operator         name                                            example
+==            equal in value (double eqaul to)                   x == y
+>             greater than                                       x > y
+<             less than                                          x < y 
+===           equal in value + data-type (triple equal to)       x===y
+>=            greater than and equal to                          x >= y 
+<=            less than and equal to                             x <= y 
+
+example:-
+--> console.log(3 > 2)              
+// true, because 3 is greater than 2
+
+--> console.log(3 < 2)            
+// false,  because 3 is greater than 2
+
+--> console.log(2 <= 3)             
+// true, because 2 is less than 3
+
+--> console.log(3 == 2)             
+// false, because 3 is not equal to 2
+
+--> console.log(3 != 2)             
+// true, because 3 is not equal to 2
+
+--> console.log(3 == '3')           
+// true, compare only value
+
+--> console.log(3 === '3')          
+// false, compare both value and data type
+
+🔰 logical operator:-
+
+The following symbols are the common logical operators: &&(ampersand) , ||(pipe) and !(negation).
+
+==> The && operator gets true only if the two operands are true. 
+
+==> The || operator gets true either of the operand is true.
+
+==> The ! operator negates true to false and false to true.
+
+▶️  && operator:-
+=> const check = 4 > 3 && 10 > 5         
+// true && true -> true
+
+=> const check = 4 > 3 && 10 < 5         
+// true && false -> false
+
+=> const check = 4 < 3 && 10 < 5         
+// false && false -> false
+
+▶️ || operator:-
+=> const check = 4 > 3 || 10 > 5         
+// true  || true -> true
+=> const check = 4 > 3 || 10 < 5         
+// true  || false -> true
+=> const check = 4 < 3 || 10 < 5         
+// false || false -> false
+
+▶️ ! negation operator:-
+==> let check = 4 > 3                    
+ // true
+==> let check = !(4 > 3)               
+ //  false
+
+let isLightOn = true
+let isLightOff = !isLightOn           
+// false  => (if true ahe tar false)
+let isMarried = !false                
+// true   => (if false ahe tar true);
+
+🔰 Increment Operator:-
+
+In JavaScript we use the increment operator to increase a value stored in a variable. The increment could be pre or post increment. Let us see each of them:
+
+▶️ Pre-increment
+let count = 0
+console.log(++count)        // 1
+console.log(count)          // 1
+
+▶️ Post-increment
+let count = 0
+console.log(count++)        // 0
+console.log(count)          // 1
+
+We use most of the time post-increment. At least you should remember how to use post-increment operator.
+
+🔰 Decrement Operator:-
+
+In JavaScript we use the decrement operator to decrease a value stored in a variable. The decrement could be pre or post decrement. Let us see each of them:
+
+▶️ Pre-decrement
+let count = 0
+console.log(--count) // -1
+console.log(count)  // -1
+
+▶️ Post-decrement
+let count = 0
+console.log(count--) // 0
+console.log(count)   // -1
+
+🔰 Ternary Operators:-
+
+Ternary operator allows to write a condition. Another way to write conditionals is using ternary operators.
+
+let isRaining = true
+isRaining
+  ? console.log('You need a rain coat.')
+  : console.log('No need for a rain coat.')
+

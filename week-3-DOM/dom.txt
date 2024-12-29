@@ -1,0 +1,146 @@
+🛑 DOM
+
+DOM ==>  (Document Object Modal) is a programming interface for web Document.
+
+==> it represents the page so that programs can manipulate its structure, style, and content.
+
+==> DOM is a way for javascript to interact with HTML and CSS on a web-page.
+
+DOM structure:-
+
+=> it represents pages in a [tree structure], where each element (example:- div, p, img) is an node of that tree.
+
+=> Nodes:-  every element, attribute, and text in HTML document are represented as node in the DOM.
+      example:-
+       element Node = <div>, <p>, <h1>, <img>,
+       text Node = the text between HTML Tag,
+       attribute Nodes = attribute like [class, id, src,href]
+
+=> js can interact with DOM to read and modify the HTML and CSS of webpage.       
+
+
+
+🔰 4 Pillar of DOM:-
+
+🛑 Selection of an Element:-
+
+   ▶️ selecting HTML element using DOM :- getElementById, getElementsByClassName, querySelector, querySelectorAll
+
+    -> element like <div>, <html>, <h1> etc
+
+    example:- selecting element
+    1) const h1 = document.getElementById('h1');
+ 
+🛑 Changing HTML:-
+
+   ▶️ changing / modify HTML:- textContent or innerHTML
+
+   -> any element like <h1>,<p>,<title>
+
+   example:- changing hello => bye;
+
+   using:- [getElementsByClassName]
+   1) const span = document.getElementsByClassName('word')[0]; 
+    why [0] this => getElementsByClassName return the HTMLCollection, which is a collection of all elements with the specified class name, it behaves like an array, so you can't directly access or modify properties like textContent on the collection itself.
+
+    alternative :- we can use [querySelector].
+    --> if we want to select only one specific element we will use querySelector, which is simpler and directly retrieves the first matching element:-
+
+    1) let heading = document.querySelector('.heading');
+       heading.textContent = 'Hello, Learning DOM';
+
+🛑 Changing CSS:- 
+
+   ▶️ changing Css :- 
+   Use the [style] property to change an element’s CSS directly
+   example:-
+   1) let heading = document.getElementsByClassName('heading')[0];
+      heading.style.color = 'red'
+
+🛑 Event Listener:-
+
+    ▶️ Adding events to html element:-
+    
+    javascript can execute when the event get occurs, like when user click on specific btn etc..
+
+    example:- using onClick event:-
+    1) let span = document.querySelector('span');
+       let btn = document.querySelector('.btn');
+       btn.addEventListener('click', function(){
+      span.innerHTML = 'Hello you Click me'
+      })
+
+      => The addEventListener() method allows you to add many events to the same element, 
+      without overwriting existing events:
+
+
+🔰 Selecting multiple element at the same time:-
+
+1) using querySelectorAll:-  
+   ==> Returns a NodeList of all elements matching the CSS selector.
+   ==> You can iterate over the NodeList using forEach() or convert it to an array if needed.
+
+   ❇️ example:-
+   const bulbs = document.querySelectorAll('.bulb'); // Selects all elements with class "bulb"
+
+     bulbs.forEach((bulb) => {
+    console.log(bulb); // Do something with each bulb
+    });
+    
+    output:-
+
+   <div class="bulb"></div>
+   <div class="bulb"></div>
+   <div class="bulb"></div>
+
+
+2) using getElementsByClassName:-   
+   ==> Returns an HTMLCollection (live collection) of elements with the specified class name.
+   ==> Can be accessed using a loop or converted into an array for modern methods like forEach()
+
+   ❇️ example:-
+   const bulbs = document.getElementsByClassName('bulb'); // Selects all elements with class "bulb"
+
+   for (let bulb of bulbs) {
+       console.log(bulb); // Do something with each bulb
+   }
+
+   output:- 
+
+   <div class="bulb"></div>
+   <div class="bulb"></div>
+   <div class="bulb"></div>
+
+3) Using getElementsByTagName()
+
+   ==> Returns an HTMLCollection of elements with the specified tag name.
+
+  ❇️ example:-
+   const divs = document.getElementsByTagName('div'); // Selects all <div> elements
+
+    for (let div of divs) {
+          console.log(div); // Do something with each <div>
+    }  
+
+🛑 difference between innerHTML and textContent:-
+
+Key Differences:-
+
+Feature	                    innerHTML	                                     textContent
+
+Content Type	       Includes HTML tags	                         Plain text only
+
+Use Case	            For working with HTML and                     For working with plain text
+                    modifying DOM 
+
+Performance  	     Slower (parses and re-renders HTML)	           Faster (does not process HTML)
+
+HTML Injection      High (can execute scripts via <script>)         None (treats everything as plain text)
+Risk		
+
+Output on Empty  	  Returns an empty                                Returns an empty string
+Nodes string	
+
+innerHTML:-' <h1>hello</h1>' => it will convert this string to original h1 tag and render it as h1 only
+
+textContent:- '<h1>hello</h1> => this will print as it is no conversion to tag print like pure text.

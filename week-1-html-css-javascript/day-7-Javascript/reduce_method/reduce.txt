@@ -1,0 +1,29 @@
+🛑 Reduce Method
+
+
+==> the reduce method executes a reducer function for array elements.
+
+==> the reduce method return a single value, that is the function's accumulated result.
+
+==> the reduce method does not execute the function for empty array elements;
+
+==> the reduce method does not change the original array.
+
+syntax:-
+
+array.reduce(function(total, currentValue, currentIndex, arr )){}
+
+==> function() = Required.
+                 A function to be run for each element in the array.
+
+Reducer function parameters:
+==> total =	Required.
+            The initialValue, or the previously returned value of the function.
+==> currentValue = Required.
+                   The value of the current element.
+==> currentIndex = Optional.
+                   The index of the current element.
+==> arr = Optional.
+          The array the current element belongs to.
+
+=> we have to provide the initial value, if there's no initial value it take first element of array as initial value for accumulator.          

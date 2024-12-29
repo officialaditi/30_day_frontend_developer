@@ -1,0 +1,119 @@
+🛑 Conditional statments:-
+
+--> Conditional statements are used for make decisions based on different conditions
+
+--> By default , statements in JavaScript script executed sequentially from top to bottom
+
+▶️ Conditions can be implementing using the following ways:
+
+--> if
+--> if else
+--> if else if else
+--> switch
+--> ternary operator
+
+🔰 if
+
+=> the key word "if" is to used check if a condition is [true] and to execute the block code
+// syntax
+if (condition) {
+  //this part of code runs for truthy condition
+}
+example:-
+let num = 3
+if (num > 0) {
+  console.log(`${num} is a positive number`)
+}
+//  3 is a positive number
+As you can see in the condition example above, 3 is greater than 0, so it is a positive number. The condition was true and the block of code was executed. However, if the condition is false, we won't see any results.
+
+🔰 if else
+
+if condition is true the first block will be executed, if not the else condition will be executed.
+// syntax
+if (condition) {
+  // this part of code runs for truthy condition
+} else {
+  // this part of code runs for false condition
+}
+
+example:-  1
+let num = 3
+if (num > 0) {
+  console.log(`${num} is a positive number`)
+} else {
+  console.log(`${num} is a negative number`)
+}
+//  3 is a positive number
+
+example:-  2
+num = -3
+if (num > 0) {
+  console.log(`${num} is a positive number`)
+} else {
+  console.log(`${num} is a negative number`)
+}
+//  -3 is a negative number
+
+
+🔰 if , else if , else
+We use else if when we have multiple conditions.
+
+example:-
+
+// if else if else
+let weather = 'sunny'
+if (weather === 'rainy') {
+  console.log('You need a rain coat.')
+} else if (weather === 'cloudy') {
+  console.log('It might be cold, you need a jacket.')
+} else if (weather === 'sunny') {
+  console.log('Go out freely.')
+} else {
+  console.log('No need for rain coat.')
+}
+
+🔰 switch case:-
+==> Switch is an alternative for if else if else else. The switch statement starts with a switch keyword followed by a parenthesis and code block. Inside the code block we will have different cases
+
+==> Case block runs if the value in the switch statement parenthesis matches with the case value. The break statement is to terminate execution so the code execution does not go down after the condition is satisfied. The default block runs if all the cases don't satisfy the condition.
+
+// syntax:-
+ 
+ switch(caseValue){
+  case 1:
+    // code
+    break
+  case 2:
+   // code
+   break
+  case 3:
+   // code
+   break
+  default:
+   // code
+}
+
+let weather = 'cloudy'
+switch (weather) {
+  case 'rainy':
+    console.log('You need a rain coat.')
+    break
+  case 'cloudy':
+    console.log('It might be cold, you need a jacket.')
+    break
+  case 'sunny':
+    console.log('Go out freely.')
+    break
+  default:
+    console.log(' No need for rain coat.')
+}
+
+🔰 Ternary Operator:-
+Another way to write conditionals is using ternary operators. 
+example:-
+
+let isRaining = true
+isRaining
+  ? console.log('You need a rain coat.')
+  : console.log('No need for a rain coat.')

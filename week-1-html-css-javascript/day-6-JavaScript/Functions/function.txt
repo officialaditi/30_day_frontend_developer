@@ -1,0 +1,125 @@
+🛑 Function
+
+--> A function is a reusable block of code or programming statements designed to perform a certain task.
+
+--> A function is declared by a function key word followed by a name, followed by parentheses ()
+function();
+
+--> A parentheses can take a parameter. If a function take a parameter it will be called with argument.
+
+--> A function can also take a default parameter.
+
+--> To store a data to a function, a function has to return certain data types. To get the value we call or invoke a function. 
+
+--> Function makes code:
+
+=> clean and easy to read
+=> reusable
+=> easy to test
+
+==> A function can be declared or created in couple of ways:
+
+==> Declaration function
+==> Expression function
+==> Anonymous function
+==> Arrow function
+
+🔰 Function Declaration:-
+
+// declaring function without parameter.
+
+function functionName(){
+    // code ...
+}
+
+functionName();
+// calling function by its name and with parentheses.
+
+▶️ Function without a parameter and return
+
+// function without parameter,  a function which make a number square
+function square() {
+  let num = 2
+  let sq = num * num
+  console.log(sq)
+}
+
+square() // 4
+
+▶️ Function returning value
+
+=> Function can also return values, if a function does not return values the value of the function is undefined
+
+=> we return value to a function instead of printing it.
+
+=> function printFullName (){
+      let firstName = 'Asabeneh'
+      let lastName = 'Yetayeh'
+      let space = ' '
+      let fullName = firstName + space + lastName
+      return fullName
+}
+console.log(printFullName())
+
+🔰  Anonymous Function:-
+
+Anonymous function or without name
+
+const anonymousFun = function() {
+  console.log(
+    'I am an anonymous function and my value is stored in anonymousFun'
+  )
+}
+
+🔰 Expression Function:-
+-> Expression functions are anonymous functions.
+
+-> we create a function without a name and we assign it to a variable.
+
+-> To return a value from the function we should call the variable.
+
+example:-
+// Function expression
+const square = function(n) {
+  return n * n
+}
+
+console.log(square(2)) // -> 4
+
+🔰 Arrow Function:-
+
+-> Arrow function is an alternative to write a function, 
+-> Arrow function uses arrow instead of the keyword function to declare a function.
+
+
+const square = (n) => {
+  return n * n
+}
+
+console.log(square(2))  // -> 4
+
+// if we have only one line in the code block, it can be written as follows, no need to write return
+const square = n => n * n  // -> 4
+
+▶️ Function with default parameters:-
+
+Sometimes we pass default values to parameters, when we invoke the function if we do not pass an argument the default value will be used
+
+example:- 
+❇️ with function Declaration
+function greetings(name = 'Peter') {
+  let message = `${name}, welcome to 30 Days Of JavaScript!`
+  return message
+}
+
+console.log(greetings())
+console.log(greetings('Asabeneh'))
+
+❇️ with arrow function:-
+const greetings = (name = 'Peter') => {
+  let message = name + ', welcome to 30 Days Of JavaScript!'
+  return message
+}
+
+console.log(greetings())
+console.log(greetings('Asabeneh'))

@@ -1,0 +1,46 @@
+🛑 Numbers:-
+
+1) Math.abs(x):- Returns the absolute value of a number, i.e., removes the sign (positive number).
+Example:- console.log(Math.abs(-5)); 
+           // 5
+          console.log(Math.abs(3));  
+           // 3
+
+
+2) Math.ceil(x):- Rounds a number upwards to the nearest integer.
+Example:- console.log(Math.ceil(4.2)); 
+           // 5
+          console.log(Math.ceil(-4.2)); 
+          // -4           
+
+3) Math.floor(x):- Rounds a number downwards to the nearest integer.
+example:- console.log(Math.floor(4.7)); 
+           // 4
+          console.log(Math.floor(-4.7)); 
+          // -5          
+
+4) Math.round(x):- Rounds a number to the nearest integer.
+example:- console.log(Math.round(4.5)); 
+           // 5
+          console.log(Math.round(4.4)); 
+          // 4          
+
+5) Math.pow(base, exponent):- Returns the value of the base raised to the power of the exponent.
+example:- console.log(Math.pow(2, 3)); 
+           // 8 (2^3)
+
+6) Math.sqrt(x):- Returns the square root of a number.
+example:- console.log(Math.sqrt(16)); 
+           // 4           
+
+7) Math.random():- Generates a random number between 0 (inclusive) and 1 (exclusive).
+example:- console.log(Math.random()); 
+           // A random decimal number between 0 and 1
+
+8) Math.max(...values):- Returns the largest of the numbers passed as arguments.
+example:- console.log(Math.max(1, 2, 3)); 
+           // 3           
+
+9) Math.min(...values):- Returns the smallest of the numbers passed as arguments.
+example:- console.log(Math.min(1, 2, 3)); 
+           // 1           

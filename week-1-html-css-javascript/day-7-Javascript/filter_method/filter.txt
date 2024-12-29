@@ -1,0 +1,16 @@
+🛑 filter method
+
+=> filter method create an new array filled with the that element who has pass the test that function provided.
+
+=> only give the filtered value.
+
+=> does not work with empty array elements.
+
+=> does not change the original aarray.
+
+-> this also take 3 things :-
+   callback function => required
+   index, and arr => optional
+
+==> it give true to keep the element or false to no keep this element.
+

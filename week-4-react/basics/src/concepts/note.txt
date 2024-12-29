@@ -1,0 +1,107 @@
+🔰 What is react?
+
+==> React.js is an JavaScript Library. which allow the user to build the UI (user interface) for web-app. 
+
+==> It's known for being efficient, flexible, and declarative.
+
+==> with help of react we can build single-page application (spa);
+
+
+🔰 what is component?
+
+==> an component is an function which accept the props object and return jsx.
+
+==> we should start component with Capital letter only.
+
+==> component are the reusable piece of code, that we can use anywhere we want.
+
+==> Components are regular JavaScript functions, so you can keep multiple components in the same file
+
+==> in react every piece of UI is Component 
+
+==> React components are regular JavaScript functions except:
+
+      --> Their names always begin with a capital letter.
+      --> They return JSX markup.
+
+🔰  Import and Export of component
+
+==> There are two primary ways to export values with JavaScript: default exports and named exports
+
+==> Named export:- while using the named export the name has to match with both side like while importing and exporting.
+syntax:- export function Button() {} //export
+         import { Button } from './Button.js'; //import
+
+==> Default export:- When you write a default import, you can put any name you want after import. For example, you could write import Banana from './Button.js' 
+syntax:-  export default function Button() {}  //export
+          import Banana from './Button.js';    //import
+
+==> People often use default exports if the file exports only one component.
+
+==> and use named exports if it exports multiple components and values.
+
+==> choice any one style of code to be consisteny in the project or work
+
+🔰 What is JSX?
+
+==> jsx is an syntax extension or xml that allow us to write HTML like code inside JavaScript.
+
+==> JSX and React are two separate things. They’re often used together, but you can use them independently of each other. JSX is a syntax extension, while React is a JavaScript library.
+
+==> rule of JSX:-
+     1) Return a single root element.
+
+     -> if you want to return multiple element wrap them with single parent tag. for example use:- <div> tag.
+     -> if you don't want to add any extra markup like <div> to dom tree we can use fragments <></> this example tags are fragments which lets us group thing without having any trace in browser HTML tree.
+
+      💠 Why do multiple JSX tags need to be wrapped?
+      ==> 1)JSX looks like HTML, but under the hood it is transformed into plain JavaScript objects.
+          2) You can’t return two objects from a function without wrapping them into an array. 
+          3) This explains why you also can’t return two JSX tags without wrapping them into another tag or a Fragment.
+
+     2) Close all the tags.
+
+     -> JSX requires tags to be explicitly closed: self-closing tags like <img> must become <img />, and wrapping tags like <li>oranges must be written as <li>oranges</li>.
+
+     3)  camelCase most of the things! 
+
+     -> But JavaScript has limitations on variable names. For example, their names can’t contain dashes or be reserved words like class.
+     -> This is why, in React, many HTML and SVG attributes are written in camelCase.
+     ->  For example, instead of stroke-width you use strokeWidth
+     ->  Since class is a reserved word, in React you write className
+
+🔰 curly braces:-
+
+==> when we want to have an dynamic data or want to render the logic of js in the markup we will use curly braces {} in jsx to open the window to JavaScript.
+
+==> double curly braces {{}} => it used to style the inline css. and to pass the object 
+
+==> JSX attributes inside quotes are passed as strings.
+
+
+🔰 Props:-
+
+==> React use props for communicate with each other.
+
+==> props stand for properties.
+
+==> parent component pass some information to their child component using props.
+
+==> props may look like html attributes but it can pass any js value like function, object or array
+
+🔰 Conditional Rendering:-
+
+==> In React, you control branching logic with JavaScript.
+
+==> You can return a JSX expression conditionally with an if statement.
+
+==> You can conditionally save some JSX to a variable and then include it inside other JSX by using the curly braces.
+
+==> In JSX, {cond ? <A /> : <B />} means “if cond, render <A />, otherwise <B />”.
+
+==> In JSX, {cond && <A />} means “if cond, render <A />, otherwise nothing”.
+
+==> The shortcuts are common, but you don’t have to use them if you prefer plain if.
+
+🔰 Rendering List:-
+

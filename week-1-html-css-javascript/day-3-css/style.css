@@ -1,0 +1,385 @@
+/* Global Variables for Easy Customization */
+:root {
+	--primary-color: rgb(170, 6, 6);
+
+	--text-color: rgb(128, 14, 205);
+	--button-hover-bg: black;
+	--button-hover-color: white;
+	--box-shadow: rgba(168, 167, 167, 0.511);
+}
+
+/* Global Reset */
+body,
+html {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 20px;
+	border-bottom: 1px solid rgba(177, 176, 176, 0.832);
+	box-shadow: 2px 2px 5px rgba(14, 6, 6, 0.937);
+	font-size: 18px;
+	height: 50px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: white;
+	z-index: 1000;
+}
+
+.logo {
+	margin-left: 10px;
+	color: var(--primary-color);
+}
+
+/* Navigation List */
+.navbar ul {
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+	margin: 0;
+}
+
+.navbar li {
+	margin-right: 30px;
+	font-size: 18px;
+	position: relative;
+}
+
+.navbar li:hover {
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.hero a:hover{
+  text-decoration: none;
+  color: white;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Hero Section */
+.hero {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+	max-width: 1200px;
+	margin: 40px auto 0;
+}
+
+.hero-text h1 {
+	font-size: 3rem; /* Responsive */
+	color: black;
+}
+
+.hero-text p {
+	font-size: 1.25rem;
+	margin: 10px 0;
+}
+
+.hero-text h2 {
+	font-size: 1rem;
+	color: var(--text-color);
+}
+
+/* Buttons */
+.btn1,
+.btn2 {
+	margin-top: 10px;
+	padding: 10px 20px;
+	border-radius: 10px;
+	background-color: rgba(230, 231, 231, 0.778);
+	font-size: 1rem;
+	border: none;
+	box-shadow: 5px 5px 6px var(--box-shadow);
+	transition: background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+}
+
+.btn2 {
+	margin-left: 20px;
+}
+
+.btn1:hover,
+.btn2:hover {
+	cursor: pointer;
+	background-color: var(--button-hover-bg);
+	color: var(--button-hover-color);
+	transform: scale(1.1);
+  
+}
+
+/* Image Styling */
+.hero img {
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+	border-radius: 50%;
+	margin: 20px;
+}
+
+.img-circle {
+	width: 350px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid rgb(206, 139, 251);
+	border-radius: 50%;
+}
+
+/* Footer / Additional Classes */
+.front {
+	color: var(--text-color);
+}
+
+.about {
+	background-color: rgb(208, 228, 247);
+	max-width: 1200px;
+	padding: 10px;
+	border-radius: 0 90px 90px 0;
+	margin: 30px 0;
+}
+
+.about .intro {
+	max-width: 1000px;
+	font-size: 20px;
+}
+
+.about .about_heading {
+	font-size: 25px;
+	color: var(--primary-color);
+	text-align: center;
+}
+
+.skill h2 {
+	margin: 50px 0;
+	font-size: 30px;
+	text-align: center;
+	color: var(--primary-color);
+}
+
+.skill ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	list-style-type: none;
+	margin: 20px 0;
+}
+
+.skill li {
+	border: 1px solid rgb(252, 253, 255);
+	padding: 20px 10px;
+	background-color: white;
+	box-shadow: 0 0 10px rgb(179, 9, 198);
+	font-size: 20px;
+	border-radius: 15px;
+	transition: transform ease 0.5s;
+}
+
+.skill li:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+.project {
+	text-align: center;
+	font-size: 30px;
+	margin-top: 100px;
+}
+
+.allProject {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 10px 20px;
+  gap: 10px;
+}
+
+.allProject img {
+	width: 200px;
+	height: 200px;
+}
+
+.proj-1 {
+	border: 1px solid black;
+	padding: 10px; 
+  border-radius: 10px;
+
+ 
+}
+.proj-1:hover{
+  box-shadow: 0 0 10px 5px rgb(157, 157, 157);
+
+}
+
+.proj-1 h2 {
+	text-align: center;
+}
+.proj-1 img {
+	width: 100%;
+	opacity: 0.6;
+	object-fit: cover;
+}
+.proj-1 img:hover {
+	opacity: 1;
+}
+
+.proj-2 {
+	border: 1px solid black;
+	padding: 10px;
+}
+
+.proj-2 h2 {
+	text-align: center;
+}
+.proj-2 img {
+	width: 100%;
+	opacity: 0.6;
+	object-fit: cover;
+}
+.proj-2 img:hover {
+	opacity: 1;
+}
+.proj-3 {
+	border: 1px solid black;
+	padding: 10px;
+}
+
+.proj-3 h2 {
+	text-align: center;
+}
+.proj-3 img {
+	width: 100%;
+	opacity: 0.6;
+	object-fit: cover;
+}
+.proj-3 img:hover {
+	opacity: 1;
+}
+.proj-3 {
+	border: 1px solid black;
+	padding: 10px;
+}
+
+.proj-4 h2 {
+	text-align: center;
+}
+.proj-4 img {
+	width: 100%;
+	opacity: 0.6;
+	object-fit: cover;
+}
+.proj-4 img:hover {
+	opacity: 1;
+}
+
+/* Contact Section Styling */
+#contact {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+#contact h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#contact h1 span {
+  color: #007acc; /* Highlighted text color */
+}
+
+/* Form Container */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Labels */
+form label {
+  display: block;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+/* Input Fields */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+  box-sizing: border-box;
+}
+
+/* Input Placeholder Styling */
+form input::placeholder,
+form textarea::placeholder {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+/* Textarea */
+form textarea {
+  resize: none;
+}
+
+/* Submit Button */
+form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007acc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #005f99;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #contact h1 {
+      font-size: 2rem;
+  }
+
+  form {
+      padding: 15px;
+  }
+
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+      font-size: 0.9rem;
+  }
+
+  form button {
+      font-size: 0.9rem;
+  }
+}

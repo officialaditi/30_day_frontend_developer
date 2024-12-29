@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Day-1</title>
+	</head>
+	<body>
+		<h1>Day-1</h1>
+		<main style="border: 3px solid blue">
+			<h1 style="text-align: center">
+				all about block and inline element
+			</h1>
+			<!-- learning about block element -->
+			<div style="border: 1px solid black">
+				<h1 style="border: 1px solid red">
+					i'm block element take full width see
+				</h1>
+			</div>
+
+			<!-- learning about inline element -->
+			<div>
+				<p>
+					<span style="border: 1px solid green; font-size: 40px"
+						>myself span</span
+					>
+					i'm inline element inside the block element
+				</p>
+			</div>
+		</main>
+		<main style="border: 3px solid red; margin-top: 10px">
+			<h1 style="text-align: center">
+				All about list:- (orderlist) and (unorderlist)
+			</h1>
+			<div
+				style="
+					display: flex;
+					align-items: center;
+					justify-content: space-around;
+				"
+			>
+				<div>
+					<h2>Order_list</h2>
+					<ol>
+						<li>coffee</li>
+						<li>juice</li>
+						<li>tea</li>
+					</ol>
+					<h2>styling Order_list</h2>
+					<ol style="list-style-type: lower-alpha">
+						<li>Aditi</li>
+						<li>Vidhika</li>
+					</ol>
+					<ol style="list-style-type: lower-greek">
+						<li>Jethala</li>
+						<li>Daya</li>
+					</ol>
+					<ol style="list-style-type: upper-roman">
+						<li>Tarak</li>
+						<li>Anjali</li>
+					</ol>
+				</div>
+				<div>
+					<h2>Unorder_list</h2>
+					<ul>
+						<li>apple</li>
+						<li>banana</li>
+						<li>chickoo</li>
+					</ul>
+					<h2>styling Unorder_list</h2>
+					<ul style="list-style-type: circle">
+						<li>Strawberry</li>
+						<li>Kiwi</li>
+					</ul>
+					<ul style="list-style-type: square">
+						<li>Mango</li>
+						<li>Watermelon</li>
+					</ul>
+					<ul style="list-style-type: none">
+						<li>Papaya</li>
+						<li>Pineapple</li>
+					</ul>
+				</div>
+			</div>
+		</main>
+		<main style="border: 3px solid purple; margin-top: 10px">
+			<div>
+				<h2 style="text-align: center">all about img and link tag</h2>
+
+				<div
+					style="
+						display: flex;
+						justify-content: space-around;
+						align-items: center;
+					"
+				>
+					<div>
+						<h3>internally img (img saved in the folder)</h3>
+						<img src="./img1.jpg" width="100px" height="100px" />
+					</div>
+
+					<div>
+						<h3>
+							Externally img(img with direct img
+							<address></address>
+							link)
+						</h3>
+						<img
+							src="https://i.pinimg.com/736x/13/93/f3/1393f3af857420c33f4feab6460a819d.jpg"
+							width="100px"
+							height="100px"
+						/>
+					</div>
+				</div>
+			</div>
+			<div style="text-align: center; margin: 10px">
+				<h1>about link tag:-</h1>
+				<h3>Different type of link and</h3>
+				<div>
+					<h4>
+						target attribute:- _self (default) open the document in
+						same window
+					</h4>
+					<a href="https://in.pinterest.com/" target="_self"
+						>pinterest.com</a
+					>
+				</div>
+				<div>
+					<h4>
+						target attribute:- _blank open the document in new
+						window
+					</h4>
+					<a href="https://chatgpt.com/" target="_blank">Chatgpt</a>
+				</div>
+				<div>
+					<h4>
+						target attribute:- _top open the document in the full
+						body of the window
+					</h4>
+					<a
+						href="https://www.linkedin.com/in/aditi-gaikwad-1a3954210/"
+						target="_top"
+						>My_Linkedin</a
+					>
+				</div>
+				<div>
+					<h4>
+						target attribute:- _parent open the document in the
+						parent frame
+					</h4>
+					<a href="https://github.com/officialaditi" target="_parent"
+						>My_github</a
+					>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

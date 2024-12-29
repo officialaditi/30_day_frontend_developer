@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Task-2</title>
+	</head>
+	<body>
+		<h1>Task-2 Build Contact Form</h1>
+		<form action="https://httpbin.org/post" method="post">
+			<!-- Full Name -->
+			<label for="fullname">Enter Full Name:</label>
+			<input
+				type="text"
+				id="fullname"
+				name="fullname"
+				placeholder="Enter full name"
+				required
+			/><br />
+
+			<!-- Email -->
+			<label for="email">Enter Email:</label>
+			<input
+				type="email"
+				id="email"
+				name="email"
+				placeholder="Enter email"
+				required
+			/><br />
+
+			<!-- Phone Number -->
+			<label for="phoneNo">Enter Phone Number:</label>
+			<input
+				type="tel"
+				id="phoneNo"
+				name="phoneNo"
+				pattern="[0-9]{10}"
+				placeholder="Enter phone number"
+				required
+			/><br />
+
+			<!-- Gender -->
+			<h3>Select Gender:</h3>
+			<input type="radio" id="male" name="gender" value="male" required />
+			<label for="male">Male</label><br />
+			<input type="radio" id="female" name="gender" value="female" />
+			<label for="female">Female</label><br />
+			<input type="radio" id="other" name="gender" value="other" />
+			<label for="other">Other</label><br />
+
+			<!-- Hobbies -->
+			<h3>Select Hobbies:</h3>
+			<input type="checkbox" id="coding" name="hobbies" value="coding" />
+			<label for="coding">Coding</label><br />
+			<input
+				type="checkbox"
+				id="reading"
+				name="hobbies"
+				value="reading"
+			/>
+			<label for="reading">Reading</label><br />
+			<input
+				type="checkbox"
+				id="designing"
+				name="hobbies"
+				value="designing"
+			/>
+			<label for="designing">Designing</label><br />
+
+			<!-- Country -->
+			<label for="country">Select Country:</label>
+			<select id="country" name="country" required>
+				<option value="">--Select Country--</option>
+				<option value="india">India</option>
+				<option value="usa">USA</option>
+				<option value="dubai">Dubai</option></select
+			><br />
+
+			<!-- Message -->
+			<h3>Enter Your Message:</h3>
+			<textarea
+				id="message"
+				name="message"
+				rows="5"
+				cols="30"
+				placeholder="Write your message here"
+				required
+			></textarea
+			><br />
+
+			<!-- Submit Button -->
+			<button type="submit">Submit</button>
+		</form>
+	</body>
+</html>

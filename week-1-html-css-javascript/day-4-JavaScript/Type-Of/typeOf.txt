@@ -1,0 +1,8 @@
+🛑 TypeOf operator
+
+To check the typeof any data type we used typeof operator.
+how?
+
+const variable = 'hello';
+console.log(typeof(variable));
+// string

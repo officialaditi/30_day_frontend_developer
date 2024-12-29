@@ -1,0 +1,77 @@
+Form :-
+
+An HTML form is used to collect user input. The user input is most often sent to a server for processing.
+
+Note: The form itself is not visible. Also note that the default width of an input field is 20 characters.
+
+******************************************************************
+
+<form> Element:-
+---> The HTML <form> element is used to create an HTML form for user input:
+
+---> The <form> element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.
+
+The HTML <form> element can contain one or more of the following form elements:
+
+<input> => input area where we can have different type-option like input-field, radio, checkbox, select option.
+
+<label> => label to define the input.
+
+<select> => define the drop-down list. inside <select> we should have <option> that we want to display and select, by default the first element is selected.
+
+<textarea> => element defines a multi-line input field (a text area) 1) The rows attribute specifies the visible number of lines in a text area.2)The cols attribute specifies the visible width of a text area.
+
+<button> => element defines a clickable button:
+
+<fieldset> => element is used to group related data in a form.
+<legend> =>  element defines a caption for the <fieldset> element.
+
+<datalist> => The <datalist> element specifies a list of pre-defined options for an <input> element.Users will see a drop-down list of the pre-defined options as they input data.
+The list attribute of the <input> element, must refer to the id attribute of the <datalist> element.
+
+
+******************************************************************
+
+<form> attribute
+
+The Method Attribute
+
+--> The method attribute specifies the HTTP method to be used when submitting the form data.
+--> The form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with method="post").
+
+Tip: Always use POST if the form data contains sensitive or personal information!
+
+The Action Attribute
+
+--> The action attribute defines the action to be performed when the form is submitted.
+
+--> Usually, the form data is sent to a file on the server when the user clicks on the submit button.
+
+******************************************************************
+
+<label> Element:-
+
+--> The <label> tag defines a label for many form elements.
+
+--> The <label> element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focuses on the input element.
+
+--> The <label> element also helps users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the <label> element, it toggles the radio button/checkbox.
+
+important:-
+
+--> The [for] attribute of the <label> tag should be equal to the [id] attribute of the <input> element to bind them together.
+
+******************************************************************
+
+<input> Element
+
+--> The HTML <input> element is the most used form element.
+
+--> An <input> element can be displayed in many ways, depending on the type attribute.
+
+Note for radio type input:- 
+name Attribute:
+
+--> The name="gender" groups the radio buttons together.
+--> Only one radio button in the same group can be selected at a time.
+--> Without the name attribute, the radio buttons will behave independently, allowing multiple selections.

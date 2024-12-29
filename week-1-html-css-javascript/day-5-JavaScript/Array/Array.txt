@@ -1,0 +1,227 @@
+🛑 Array:-
+
+-> an array can store multiple values.
+
+-> Each value in an array has an index, and each index has a reference in a memory address.
+
+-> Each value can be accessed by using their indexes.
+
+-> The index of an array starts from zero, and the index of the last element is less by one from the length of the array.
+
+--> An array is a collection of different data types which are ordered and changeable(modifiable). 
+
+--> An array allows storing duplicate elements and different data types
+
+--> An array can be empty, or it may have different data type values.
+
+▶️ How to create an empty array?
+
+-> we can create an array in different ways.
+
+-> it is very common to use const instead of let to declare an array variable. 
+
+-> If you ar using const it means you do not use that variable name again.
+
+1️⃣ const arr = new Array();
+console.log(arr);
+
+2️⃣ const arr = [];
+// this is most recommended way to create empty array;
+console.log(arr);
+
+▶️ How to create an array with value?
+Array with initial values. We use length property to find the length of an array.
+
+1) const stringArray = ['aditi','you','can','do', 'it'];
+
+2) const numberArray = [0, 5, 10, 7];
+
+3) const mixArray = ['aditi', '7', true, {skills: ['html', 'css', 'js']}];
+
+******************************************************************************
+
+🛑 methods to manipulate array:-
+
+🔰 Array Constructor:-
+
+Array:- its used to create an array.
+
+const arr = Array()  // create an empty array
+console.log(arr);
+
+💠 create an empty value with particular number you want
+   const 5Arry = Array(5)  // it create 5 empty array   
+   console.log(5Array); [empty array X 5] 
+
+🔰 Creating static values with fill:-
+
+fill: Fill all the array elements with a static value.
+
+const arr = Array()          // create an empty array 
+console.log(arr);
+
+filling value hello 5 time.
+const Hello5Time = Array(5).fill('Hello');
+console.log(Hello5Time);
+// ['Hello','Hello','Hello','Hello','Hello'];
+
+🔰 Concatenating array using concat:-
+
+concat:To concatenate two arrays.
+
+const firstArray = [1,2,3];
+const lastArray = [4,5,6];
+const combineArray = firstArray.concat(lastArray);
+console.log(combineArray);
+ // [1, 2, 3, 4, 5, 6]
+
+ 🔰 Getting array length:-
+
+Length:To know the size of the array
+
+const numbers = [1, 2, 3, 4, 5]
+console.log(numbers.length) 
+//  5 is the size of the array
+
+🔰 Getting index of an element from array:-
+
+indexOf:To check if an item exist in an array. If it exists it returns the index else it returns -1.
+
+const numbers = [1,2,3,4,5];
+console.log(numbers.indexOf(5));  // 4
+console.log(numbers.indexOf(1)); // 0
+
+🔰 Getting last index of an element in array:-
+
+lastIndexOf: It gives the position of the last item in the array. If it exist, it returns the index else it returns -1.
+
+const numbers = [1, 2, 3, 4, 5, 3, 1, 2]
+console.log(numbers.lastIndexOf(2)) // 7
+console.log(numbers.lastIndexOf(0)) // -1
+
+includes:To check if an item exist in an array. If it exist it returns the true else it returns false.
+
+const numbers = [1, 2, 3, 4, 5]
+console.log(numbers.includes(5)) // true
+console.log(numbers.includes(0)) // false
+
+const webTechs = [
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'React',
+  'Redux',
+  'Node',
+  'MongoDB'
+]
+console.log(webTechs.includes('Node'))  // true
+console.log(webTechs.includes('C'))  
+
+🔰 Checking array:-
+
+Array.isArray:To check if the data type is an array;
+
+const numbers = [1, 2, 3, 4, 5]
+console.log(Array.isArray(numbers)) // true
+
+const number = 100
+console.log(Array.isArray(number)) // false
+
+🔰 Converting array to string:-
+
+const numbers = [1, 2, 3, 4, 5]
+console.log(numbers.toString()) // 1,2,3,4,5
+
+const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
+console.log(names.toString()) // Asabeneh,Mathias,Elias,Brook
+
+🔰 Joining array elements:-
+
+join: It is used to join the elements of the array, the argument we passed in the join method will be joined in the array and return as a string. By default, it joins with a comma, but we can pass different string parameter which can be joined between the items.
+
+const numbers = [1, 2, 3, 4, 5]
+console.log(numbers.join()) // 1,2,3,4,5
+
+const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
+console.log(names.join()) // Asabeneh,Mathias,Elias,Brook
+console.log(names.join(' # ')) //Asabeneh # Mathias # Elias # Brook
+
+🔰 Slice array elements:-
+
+Slice: To cut out a multiple items in range. It takes two parameters:starting and ending position. It doesn't include the ending position.
+
+const numbers = [1,2,3,4,5]
+console.log(numbers.slice()) // -> it copies all  item
+console.log(numbers.slice(1,4)) 
+// -> [2,3,4] // it doesn't include the ending position
+
+🔰 Splice method in array:-
+
+Splice: It takes three parameters: Starting position, number of items to be removed and number of items to be added.
+
+// first parameter:- position from where new elements should be added
+// second parameter:- remove how many elements should be removed
+// third parameter:- define the (new element) we wanted to added.
+
+const numbers = [1, 2, 3, 4, 5]
+numbers.splice()
+console.log(numbers)              
+  // -> remove all items
+
+numbers.splice(0,3,'hello');b // start from 0 delete 3 items and add 'hello';
+// ['hello',4,5];
+
+🔰 Adding item to an array using push:-
+
+Push: adding item in the end. To add item to the end of an existing array we use the push method
+
+const arr  = ['item1', 'item2','item3']
+arr.push('new item')
+console.log(arr)
+// ['item1', 'item2','item3','new item']
+
+🔰 Removing the end element using pop:-
+
+pop: Removing item in the end.
+
+const numbers = [1, 2, 3, 4, 5]
+numbers.pop() // -> remove one item from the end
+console.log(numbers) // -> [1,2,3,4]
+
+🔰 Removing an element from the beginning
+
+shift: Removing one array element in the beginning of the array.
+
+const numbers = [1, 2, 3, 4, 5]
+numbers.shift() // -> remove one item from the beginning
+console.log(numbers) // -> [2,3,4,5]
+
+🔰 Add an element from the beginning:-
+
+unshift: Adding array element in the beginning of the array.
+
+const numbers = [1, 2, 3, 4, 5]
+numbers.unshift(0) // -> add one item from the beginning
+console.log(numbers) // -> [0,1,2,3,4,5]
+ 
+🔰 Reversing array order
+
+reverse: reverse the order of an array
+
+const numbers = [1, 2, 3, 4, 5]
+numbers.reverse() // -> reverse array order
+console.log(numbers) // [5, 4, 3, 2, 1]
+
+▶️ array inside array:-
+
+const firstNums = [1, 2, 3]
+const secondNums = [1, 4, 9]
+
+const arrayOfArray =  [[1, 2, 3], [1, 2, 3]]
+console.log(arrayOfArray[0]) // [1, 2, 3]
+
+const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+const backEnd = ['Node','Express', 'MongoDB']
+const fullStack = [frontEnd, backEnd]
+console.log(fullStack)   
+// [["HTML", "CSS", "JS", "React", "Redux"], ["Node", "Express", "MongoDB"]]
